@@ -206,6 +206,9 @@
   .focus-card .code{ font-family:'Space Mono',monospace; font-size:11px; color:var(--steel); }
   .focus-card h3{ font-size:18px; margin:14px 0 10px; font-weight:600; font-family:'Space Grotesk',sans-serif; }
   .focus-card p{ font-size:13.5px; color:var(--steel); }
+  .focus-card .links{ display:flex; gap:14px; margin-top:14px; position:relative; z-index:1; }
+  .focus-card .links a{ font-family:'Space Mono',monospace; font-size:11px; color:var(--granted); border-bottom:1px dashed var(--granted-dim); transition:color .2s, border-color .2s; }
+  .focus-card .links a:hover{ color:var(--granted-2); border-color:var(--granted-2); }
 
   /* ---------- STACK ---------- */
   .stack-grid{ display:grid; grid-template-columns:repeat(6,1fr); gap:12px; }
@@ -407,16 +410,28 @@
         <div class="code mono">CLASS / 01</div>
         <h3>🔓 IDOR &amp; Broken Access Control</h3>
         <p>Horizontal &amp; vertical privilege escalation. Accessing other users' data by manipulating IDs and parameters.</p>
+        <div class="links">
+          <a href="https://portswigger.net/web-security/access-control" target="_blank" rel="noopener">PortSwigger →</a>
+          <a href="https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html" target="_blank" rel="noopener">OWASP →</a>
+        </div>
       </div>
       <div class="focus-card">
         <div class="code mono">CLASS / 02</div>
         <h3>🔑 Authentication Flaws</h3>
         <p>Password reset bugs, session fixation, MFA bypass, and token predictability.</p>
+        <div class="links">
+          <a href="https://portswigger.net/web-security/authentication" target="_blank" rel="noopener">PortSwigger →</a>
+          <a href="https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html" target="_blank" rel="noopener">OWASP →</a>
+        </div>
       </div>
       <div class="focus-card">
         <div class="code mono">CLASS / 03</div>
         <h3>⚙️ Business Logic</h3>
         <p>Workflow abuse, price manipulation, and trust boundary violations that scanners can't find.</p>
+        <div class="links">
+          <a href="https://portswigger.net/web-security/logic-flaws" target="_blank" rel="noopener">PortSwigger →</a>
+          <a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/README" target="_blank" rel="noopener">OWASP →</a>
+        </div>
       </div>
     </div>
   </section>
@@ -486,7 +501,7 @@
     <h2 class="display">Where things stand</h2>
     <p style="font-size:15.5px; color:var(--steel); max-width:65ch; margin-bottom:32px;">Access Control is done. Authentication is in progress. Once both plus Business Logic are solid, the plan shifts to live hunting and disclosed-report analysis at scale — roughly 50 reports per class — run in parallel with prepping for a junior remote security role. No live paid submission yet — that's the next milestone, not a claim I'm making early.</p>
     <div class="stat-strip mono reveal-stagger">
-      <div class="stat"><div class="n display">27</div><div class="l">Hacker101 CTF pts</div></div>
+      <div class="stat"><div class="n display">38</div><div class="l">Hacker101 CTF pts</div></div>
       <div class="stat"><div class="n display">20+</div><div class="l">Disclosed reports analyzed</div></div>
       <div class="stat"><div class="n display">3</div><div class="l">Focus classes locked</div></div>
       <div class="stat"><div class="n display">5</div><div class="l">Labs solved &amp; written up</div></div>
