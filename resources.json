@@ -1,0 +1,32 @@
+[
+  {
+    "code": "CLASS / 01",
+    "emoji": "🔓",
+    "title": "IDOR &amp; Broken Access Control",
+    "summary": "Horizontal &amp; vertical privilege escalation. Accessing other users' data by manipulating IDs and parameters.",
+    "links": [
+      { "label": "PortSwigger", "url": "https://portswigger.net/web-security/access-control" },
+      { "label": "OWASP", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html" }
+    ]
+  },
+  {
+    "code": "CLASS / 02",
+    "emoji": "🔑",
+    "title": "Authentication Flaws",
+    "summary": "Password reset bugs, session fixation, MFA bypass, and token predictability.",
+    "links": [
+      { "label": "PortSwigger", "url": "https://portswigger.net/web-security/authentication" },
+      { "label": "OWASP", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html" }
+    ]
+  },
+  {
+    "code": "CLASS / 03",
+    "emoji": "⚙️",
+    "title": "Business Logic",
+    "summary": "Workflow abuse, price manipulation, and trust boundary violations that scanners can't find.",
+    "links": [
+      { "label": "PortSwigger", "url": "https://portswigger.net/web-security/logic-flaws" },
+      { "label": "OWASP", "url": "https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/README" }
+    ]
+  }
+]
